@@ -25,8 +25,10 @@ public class RestWebServicesApplication
 		return localResolver;
 	}
 
+	// Can be simplified by adding "#spring.messages.basename = messages" in applicaiton.properties file
+	// In that case we dont require the below function
 	@Bean
-	public ResourceBundleMessageSource MessageSource()
+	public ResourceBundleMessageSource messageSource()
 	{
 		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
 		messageSource.setBasename("messages");
