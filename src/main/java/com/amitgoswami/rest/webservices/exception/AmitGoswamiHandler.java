@@ -1,6 +1,7 @@
 package com.amitgoswami.rest.webservices.exception;
 
-import com.amitgoswami.rest.webservices.User.UserNotFoundException;
+import com.amitgoswami.rest.webservices.JPA.JPAUserNotFoundException;
+import com.amitgoswami.rest.webservices.JPA.JPAUserNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,8 +28,8 @@ public class AmitGoswamiHandler extends ResponseEntityExceptionHandler
          return new ResponseEntity( exceptionResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @ExceptionHandler(UserNotFoundException.class)
-    public final ResponseEntity<Object> handleUserNotFoundException(UserNotFoundException ex, WebRequest request)
+    @ExceptionHandler(JPAUserNotFoundException.class)
+    public final ResponseEntity<Object> handleUserNotFoundException(JPAUserNotFoundException ex, WebRequest request)
     {
         ExceptionResponse exceptionResponse =
                 new ExceptionResponse(new Date(), ex.getMessage(),request.getDescription(false));
