@@ -1,16 +1,18 @@
 # SpringMicroservices
 MicroServices with Spring Boot &amp; Spring Cloud
 
-MICROSERVICES
+#MICROSERVICES
 
 A.	INTRODUCTION
 Web Service – W3C Definition – Software system designed to support interoperable machine to machine interaction over a network.  
 Developing RESTful web services is fun. The combination of Spring Boot, Spring Web MVC, Spring Web Services and JPA makes it even more fun. It’s fun to create Microservices.
+
 There are two parts to it - RESTful web services and Microservices
 Architectures are moving towards MicroServices.
 RESTful web services are the first step to developing great microservices. Spring Boot, in combination with Spring Web MVC (also called Spring REST) makes it easy to develop RESTful web services.
 
-WEB SERVICES GROUPS – SOAP base and RESTFUL style.
+##WEB SERVICES GROUPS – SOAP base and RESTFUL style.
+
 SOAP: (Simple Object Access Protocol)
 Service Definition: WSDL – Web Services Definition Language. 
 •	Endpoint
@@ -44,9 +46,9 @@ User  Post
 
 What is dispatcher servlet? Front controller for spring web container. 
 
-HATEOAS – HYPERMEDIA AS THE ENGINE OF APPLICATION STATE
+##HATEOAS – HYPERMEDIA AS THE ENGINE OF APPLICATION STATE
 
-INTERNATIONALIZATION 
+##INTERNATIONALIZATION 
 
 ####Internationalization 
 ### Configuration
